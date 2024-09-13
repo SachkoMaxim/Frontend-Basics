@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, front, front-end, programming, web-page, webpage, table, position, transform, hover">
+        <meta name="description" content="Тут є таблиця з інформацією про автора. Також тут розміщено телефон різними способами.">
+        <title>Лабораторна 2. Сачко М. Є. - Група ІМ-22</title>
+        <style>
+            .table-one {
+                border-collapse: collapse;
+                width: 45%;
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+            }
+
+            .row-height {
+                height: 55px;
+            }
+
+            .cell {
+                border: 3px solid black;
+                width: 20%;
+            }
+
+            .first-row {
+                background-color: #768f8f;
+                color: #002B01;
+            }
+
+            .first-row:hover {
+                filter: invert();
+            }
+
+            .second-row {
+                background-color: #f5f576;
+                color: #011fff;
+            }
+
+            .second-row:hover {
+                filter: invert();
+            }
+          </style>
+    </head>
+    <body>
+        <table class="table-one">
+            <tr class="row-height first-row">
+                <td rowspan="2" class="cell">Сачко</td>
+                <td colspan="2" class="cell" width="40%">Максим</td>
+                <td class="cell">Євгенійович</td>
+                <td class="cell"></td>
+            </tr>
+            <tr class="row-height second-row">
+                <td rowspan="2" class="cell">ІМ-22</td>
+                <td rowspan="2" class="cell">ЛР-2</td>
+                <td rowspan="3" class="cell"></td>
+                <td class="cell">Варіант 6</td>
+            </tr>
+            <tr class="row-height">
+                <td class="cell"></td>
+                <td rowspan="2" class="cell"></td>
+            </tr>
+            <tr class="row-height">
+                <td colspan="3" class="cell" width="60%"></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
