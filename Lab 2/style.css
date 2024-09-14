@@ -1,0 +1,78 @@
+.phone-container {
+    display: flex;
+    align-items: flex-start;
+    height: 500px;
+    overflow: hidden;
+}
+
+.rectangle {
+    width: 250px;
+    height: 470px;
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: #d6e3bc;
+}
+
+.screen {
+    width: 200px;
+    height: 220px;
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: Tahoma, sans-serif;
+    color: black;
+    line-height: 220px;
+}
+
+.buttons-cont {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+
+.buttons-cont > div {
+    width: 40px;
+    height: 40px;
+    background-color: #3f3151;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.buttons-cont > div:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+.rectangle-position {
+    position: relative;
+    bottom: -25px;
+    left: 35px;
+}
+
+.screen-position {
+    position: relative;
+    bottom: 420px;
+    left: 60px;
+}
+
+.buttons-cont-position {
+    position: relative;
+    bottom: 405px;
+    left: 75px;
+}
+
+.rectangle-transform {
+    transform: translate(175px, 25px);
+}
+
+.screen-transform {
+    transform: translate(200px, -420px);
+}
+
+.buttons-cont-transform {
+    transform: translate(215px, -405px);
+}
