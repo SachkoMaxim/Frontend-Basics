@@ -12,13 +12,21 @@ body {
 }
 
 .container {
-    flex: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     overflow: hidden;
     justify-content: center;
 }
 
 .text-top {
     background: #70a7df;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     height: 15vh;
     align-items: center;
@@ -26,8 +34,11 @@ body {
 }
 
 .image-top {
-    flex: 1;
     background: #fac0f6;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     height: 15vh;
     align-items: center;
     padding-top: 2vh;
