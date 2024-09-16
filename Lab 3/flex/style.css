@@ -22,7 +22,7 @@ body {
     justify-content: center;
 }
 
-.text-top {
+.header {
     background: #70a7df;
     -webkit-flex: 1;
     -moz-flex: 1;
@@ -33,7 +33,7 @@ body {
     padding-top: 2vh;
 }
 
-.image-top {
+.navigation {
     background: #fac0f6;
     -webkit-flex: 1;
     -moz-flex: 1;
@@ -44,7 +44,7 @@ body {
     padding-top: 2vh;
 }
 
-.content {
+.main-cont {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
@@ -54,7 +54,7 @@ body {
     height: 70vh;
 }
 
-.image-left {
+.content {
     background: #bce68b;
     -webkit-flex: 3;
     -moz-flex: 3;
@@ -64,7 +64,7 @@ body {
     padding-top: 15vh;
 }
 
-.text-right {
+.menu {
     background: #93b071;
     -webkit-flex: 1;
     -moz-flex: 1;

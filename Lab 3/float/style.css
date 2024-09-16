@@ -17,7 +17,7 @@ body {
     justify-content: center;
 }
 
-.text-top {
+.header {
     background: #70a7df;
     float: inline-start;
     width: 100%;
@@ -26,14 +26,14 @@ body {
     padding-top: 2vh;
 }
 
-.content {
+.main-cont {
     float: inline-start;
     justify-content: space-between;
     width: 100%;
     height: 85vh;
 }
 
-.image-top {
+.navigation {
     background: #fac0f6;
     float: inline-start;
     width: 100%;
@@ -42,7 +42,7 @@ body {
     padding-top: 2vh;
 }
 
-.image-left {
+.content {
     background: #bce68b;
     float: left;
     width: 75%;
@@ -50,7 +50,7 @@ body {
     padding-top: 15vh;
 }
 
-.text-right {
+.menu {
     background: #93b071;
     float: right;
     width: 25%;
