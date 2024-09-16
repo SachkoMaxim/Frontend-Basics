@@ -6,13 +6,14 @@
 body {
     color: #000000;
     font-family: Arial, Helvetica, 'Times New Roman', sans-serif;
-    font-size: 7vh;
+    font-size: 6vh;
     font-weight: bold;
     text-align: center;
 }
 
 .container {
     width: 100%;
+    height: 100vh;
     overflow: hidden;
     justify-content: center;
 }
