@@ -19,3 +19,44 @@ const secondElem = document.querySelector('ul li:nth-child(3)');
 secondElem.addEventListener('click', function() {
     toggleBackground(this, 'row_style_2', 'row_style_1');
 });
+
+document.getElementById('addImage').addEventListener('click', function() {
+    const imgElement = document.getElementById('image_change');
+    if (!imgElement) {
+        const link = document.createElement('a');
+        link.id = 'link_change';
+        link.href = "https://www.0312.ua/";
+        link.target = "_blank";
+        
+        const newImg = document.createElement('img');
+        newImg.id = 'image_change';
+        newImg.src = './images/Uzhgorod.jpg';
+        newImg.width = 600;
+        newImg.alt = "Йой, щось пішло не так...";
+
+        link.appendChild(newImg);
+        document.body.insertBefore(link, document.querySelector('div'));
+    }
+});
+
+document.getElementById('increaseImage').addEventListener('click', function() {
+    const imgElement = document.getElementById('image_change');
+    if (imgElement) {
+        imgElement.width += 50;
+    }
+});
+
+document.getElementById('decreaseImage').addEventListener('click', function() {
+    const imgElement = document.getElementById('image_change');
+    if (imgElement && imgElement.width > 50) {
+        imgElement.width -= 50;
+    }
+});
+
+document.getElementById('removeImage').addEventListener('click', function() {
+    const imgElement = document.getElementById('image_change');
+    const linkElement = document.getElementById('link_change');
+    if (imgElement) {
+        linkElement.remove();
+    }
+});
