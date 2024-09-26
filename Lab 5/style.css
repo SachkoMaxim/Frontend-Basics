@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+}
+
+.container {
+    width: 30vw;
+    padding: 20px;
+    font-size: 2vh;
+    box-sizing: border-box;
+}
+
+.table-cont {
+    text-align: center;
+    margin-left: 3vw;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 2vh;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+
+input:hover {
+    border-color: lightslategray;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+input.error {
+    border: 3px solid red;
+}
+
+input.success {
+    border-color:green;
+}
+
+button {
+    width: 80%;
+    padding: 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2.5vh;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.error-message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.thick-line {
+    width: 10px;
+    height: 80vh;
+    background-color: black;
+    margin: 0 10vw 0 10vw;
+}
+
+@media (prefers-color-scheme: dark) {
+    .thick-line {
+        background-color: lightgray;
+    }
+}
