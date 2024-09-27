@@ -91,3 +91,67 @@ inputs.forEach(input => {
         input.classList.remove('success');
     });
 });
+
+const table = document.querySelector('#colorTable tbody');
+const colorPalette = document.getElementById('colorPalette');
+const colorPicker = document.getElementById('pickerColor');
+
+let counter = 1;
+const rows = 6;
+const cols = 6;
+
+for (let i = 0; i < rows; i++) {
+    const row = document.createElement('tr');
+    for (let j = 0; j < cols; j++) {
+        const cell = document.createElement('td');
+        cell.textContent = counter;
+        row.appendChild(cell);
+        counter++;
+    }
+    table.appendChild(row);
+}
+
+function getRandomColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
+function applyRectangleColor(startCell) {
+    const selectedColor = getRandomColor();
+    const startRow = startCell.parentElement.rowIndex;
+    const startCol = startCell.cellIndex;
+
+    for (let i = startRow; i < rows; i++) {
+        for (let j = startCol; j < cols; j++) {
+            table.rows[i].cells[j].style.backgroundColor = selectedColor;
+        }
+    }
+}
+
+const specialCell = table.rows[0].cells[3];
+let clickTimeout;
+let isDoubleClick = false;
+
+specialCell.addEventListener('mouseover', () => {
+    specialCell.style.backgroundColor = getRandomColor();
+});
+  
+specialCell.addEventListener('click', function () {
+    clickTimeout = setTimeout(() => {
+      if (!isDoubleClick) { 
+        console.log("Single Click Fire");
+        colorPicker.click(); 
+      }
+      isDoubleClick = false;
+    }, 250);
+});
+  
+specialCell.addEventListener('dblclick', function () {
+    clearTimeout(clickTimeout);
+    isDoubleClick = true;
+  
+    applyRectangleColor(specialCell);
+});
+
+colorPicker.addEventListener('input', (e) => {
+    specialCell.style.backgroundColor = e.target.value;
+});
