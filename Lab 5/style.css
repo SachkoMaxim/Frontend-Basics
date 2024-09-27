@@ -5,15 +5,16 @@ body {
 }
 
 .container {
-    width: 30vw;
+    width: 465px;
     padding: 20px;
-    font-size: 1vw;
+    font-size: 15px;
     box-sizing: border-box;
 }
 
 .table-cont {
     text-align: center;
-    margin-left: 3vw;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 label {
@@ -26,7 +27,7 @@ input {
     margin-bottom: 20px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    font-size: 1vw;
+    font-size: 15px;
     box-sizing: border-box;
 }
 
@@ -52,14 +53,14 @@ input.success {
 }
 
 button {
-    width: 80%;
-    padding: 20px;
+    width: 65%;
+    padding: 15px;
     background: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.5vw;
+    font-size: 20px;
     box-sizing: border-box;
 }
 
@@ -71,25 +72,19 @@ button:hover {
     margin-top: 20px;
     color: red;
     font-weight: bold;
-    font-size: 1.5vw;
-}
-
-.thick-line {
-    width: 10px;
-    height: 80vh;
-    background-color: black;
-    margin: 0 5vw 0 10vw;
+    font-size: 20px;
 }
 
 .color-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 50px;
 }
 
 table {
     border-collapse: collapse;
-    margin-top: 5vh;
+    margin-top: 10px;
 }
 
 td {
@@ -103,10 +98,4 @@ td {
 
 .color-palette {
     display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-    .thick-line {
-        background-color: lightgray;
-    }
 }
