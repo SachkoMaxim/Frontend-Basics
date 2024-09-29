@@ -24,10 +24,9 @@ h1 {
 
 .info-button {
     width: auto;
-    height: 6vh;
+    height: auto;
     font-size: 2vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw; 
     color: white;
     background-color: #060025;
     border-radius: 10px;
