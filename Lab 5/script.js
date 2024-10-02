@@ -62,7 +62,11 @@ document.getElementById("infoForm").addEventListener("submit", function(event) {
         document.getElementById("idCard").classList.add("success");
     }
     
-    document.getElementById("errorMessages").innerHTML = errorMessages.join("<br>");
+    document.getElementById("bottomErrorMessages").innerHTML = errorMessages.join("<br>");
+
+    setTimeout(() => {
+        document.getElementById("bottomErrorMessages").innerHTML = "";
+    }, 5000);
 
     if (isValid) {
         let newWindow = window.open("", "", "width=400,height=300");
@@ -84,11 +88,13 @@ inputs.forEach(input => {
     input.addEventListener('focus', () => {
         input.classList.remove('error');
         input.classList.remove('success');
+        document.getElementById("bottomErrorMessages").innerHTML = "";
     });
 
     input.addEventListener('input', () => {
         input.classList.remove('error');
         input.classList.remove('success');
+        document.getElementById("bottomErrorMessages").innerHTML = "";
     });
 });
 
