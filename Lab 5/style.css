@@ -20,7 +20,7 @@ label {
     display: block;
 }
 
-input {
+.inputt {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -49,6 +49,20 @@ input.error {
 
 input.success {
     border-color:green;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selectt {
+    width: 25%;
+}
+
+.input-in-selectt {
+    width: 75%;
 }
 
 button {

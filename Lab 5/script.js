@@ -4,6 +4,7 @@ document.getElementById("infoForm").addEventListener("submit", function(event) {
     const name = document.getElementById("name").value;
     const variant = document.getElementById("variant").value;
     const group = document.getElementById("group").value;
+    const countryCode = document.getElementById("countryCode").value;
     const phone = document.getElementById("phone").value;
     const idCard = document.getElementById("idCard").value;
     
@@ -73,7 +74,7 @@ document.getElementById("infoForm").addEventListener("submit", function(event) {
             <p><strong>ПІБ:</strong> ${name}</p>
             <p><strong>Варіант:</strong> ${variant}</p>
             <p><strong>Група:</strong> ${group}</p>
-            <p><strong>Телефон:</strong> ${phone}</p>
+            <p><strong>Телефон:</strong> ${countryCode}-${phone}</p>
             <p><strong>ID-картка:</strong> ${idCard}</p>
     `   );
     }

@@ -13,15 +13,24 @@
             <h1>Заповніть форму</h1>
 
             <form id="infoForm">
-                <input type="text" id="name" placeholder="ПІБ (Прізвище І. П.)" required>
+                <input type="text" id="name" class="inputt" placeholder="ПІБ (Прізвище І. П.)" required>
 
-                <input type="number" id="variant" placeholder="Варіант (1-999)" required>
+                <input type="number" id="variant" class="inputt" placeholder="Варіант (1-999)" required>
 
-                <input type="text" id="group" placeholder="Група (АА-11)" required>
+                <input type="text" id="group" class="inputt" placeholder="Група (АА-11)" required>
 
-                <input type="text" id="phone" placeholder="Телефон ((111)-111-11-11)" required>
+                <div class="phone-input">
+                    <select id="countryCode" class="inputt selectt" required>
+                        <option value=""></option>
+                        <option value="+380">+380</option>
+                        <option value="+001">+001</option>
+                        <option value="+44">+44</option>
+                        <option value="+49">+49</option>
+                    </select>
+                    <input type="tel" id="phone" class="inputt input-in-selectt" placeholder="Телефон (111-111-11-11)" required>
+                </div>                
 
-                <input type="text" id="idCard" placeholder="ID-карта (АА №111111)" required>
+                <input type="text" id="idCard" class="inputt" placeholder="ID-карта (АА №111111)" required>
 
                 <button type="submit">Надіслати</button>
 
