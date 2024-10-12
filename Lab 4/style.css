@@ -38,3 +38,17 @@
     opacity: 1;
     visibility: visible;
 }
+
+@media (prefers-color-scheme: dark) {
+    .welcome-message {
+        background-color: rgba(23, 149, 181, 0.5);
+        color: rgb(24, 24, 24);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .welcome-message {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+}
