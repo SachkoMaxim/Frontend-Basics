@@ -69,18 +69,90 @@ document.getElementById("infoForm").addEventListener("submit", function(event) {
     }, 5000);
 
     if (isValid) {
-        let newWindow = window.open("", "", "width=400,height=300");
-
-        newWindow.document.write(`
-            <h2>Введена інформація</h2>
+        showModal(`
             <p><strong>ПІБ:</strong> ${name}</p>
             <p><strong>Варіант:</strong> ${variant}</p>
             <p><strong>Група:</strong> ${group}</p>
             <p><strong>Телефон:</strong> ${phone}</p>
             <p><strong>ID-картка:</strong> ${idCard}</p>
-        `);
+    `   );
     }
 });
+
+const modal = document.getElementById('draggableModal');
+const header = document.getElementById('modalHeader');
+const closeButton = document.querySelector('.close-btn');
+
+function showModal(content) {
+    const modalContent = document.getElementById('modalContent');
+    modalContent.innerHTML = content;
+    modal.style.display = 'block';
+    modal.style.top = '10px';
+    modal.style.left = '10px';
+}
+
+closeButton.onclick = function() {
+    modal.style.display = 'none';
+};
+
+closeButton.ontouchstart = function() {
+    modal.style.display = 'none';
+};
+
+header.onmousedown = function(event) {
+    event.preventDefault();
+    startDrag(event.clientX, event.clientY);
+
+    document.onmousemove = function(event) {
+        onDrag(event.pageX, event.pageY);
+    };
+
+    document.onmouseup = function() {
+        endDrag();
+    };
+};
+
+header.ontouchstart = function(event) {
+    event.preventDefault();
+    const touch = event.touches[0];
+    startDrag(touch.clientX, touch.clientY);
+
+    document.ontouchmove = function(event) {
+        const touch = event.touches[0];
+        onDrag(touch.pageX, touch.pageY);
+    };
+
+    document.ontouchend = function() {
+        endDrag();
+    };
+};
+
+header.ondragstart = function() {
+    return false;
+};
+
+function startDrag(clientX, clientY) {
+    let shiftX = clientX - modal.getBoundingClientRect().left;
+    let shiftY = clientY - modal.getBoundingClientRect().top;
+
+    modal.dataset.shiftX = shiftX;
+    modal.dataset.shiftY = shiftY;
+}
+
+function onDrag(pageX, pageY) {
+    let shiftX = parseFloat(modal.dataset.shiftX);
+    let shiftY = parseFloat(modal.dataset.shiftY);
+
+    modal.style.left = pageX - shiftX + 'px';
+    modal.style.top = pageY - shiftY + 'px';
+}
+
+function endDrag() {
+    document.onmousemove = null;
+    document.onmouseup = null;
+    document.ontouchmove = null;
+    document.ontouchend = null;
+}
 
 const inputs = document.querySelectorAll('input');
 
