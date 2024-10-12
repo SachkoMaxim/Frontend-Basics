@@ -8,7 +8,15 @@ function toggleBackground(element, class1, class2) {
     }
 }
 
-const elem7 = document.getElementById('7');
+const elem7 = document.getElementById('e7');
+
+elem7.addEventListener('touchstart', function() {
+    this.style.textDecoration = 'underline';
+});
+
+elem7.addEventListener('touchend', function() {
+    this.style.textDecoration = 'none';
+});
 
 elem7.addEventListener('click', function() {
     toggleBackground(this, 'row_style_1', 'row_style_2');
@@ -60,3 +68,20 @@ document.getElementById('removeImage').addEventListener('click', function() {
         linkElement.remove();
     }
 });
+
+window.onload = function() {
+    const welcomeMessage = document.getElementById('welcomeMessage');
+    
+    function hideMessage() {
+        welcomeMessage.classList.remove('show');
+    }
+
+    welcomeMessage.classList.add('show');
+    
+    setTimeout(hideMessage, 5000);
+    
+    document.addEventListener('click', hideMessage);
+    document.addEventListener('scroll', hideMessage);
+    document.addEventListener('keypress', hideMessage);
+    document.addEventListener('touchstart', hideMessage);
+};
