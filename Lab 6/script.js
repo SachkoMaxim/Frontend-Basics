@@ -31,8 +31,8 @@ function displayUsers(users) {
 
         userCard.innerHTML = `
             <img src="${user.picture.large}" alt="User Picture">
-            <p><strong>Ім'я:</strong> ${user.name.first} ${user.name.last}</p>
             <p><strong>Email:</strong> ${user.email}</p>
+            <p><strong>Ім'я:</strong> ${user.name.first} ${user.name.last}</p>
             <p><strong>Телефон:</strong> ${user.phone}</p>
             <p><strong>Місто:</strong> ${user.location.city}</p>
         `;
