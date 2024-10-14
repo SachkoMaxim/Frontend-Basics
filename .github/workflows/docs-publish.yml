@@ -1,0 +1,28 @@
+name: Build and publish site
+run-name: 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Publish-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - run: mkdir full_build
+      - run: cp -r index.html "Lab 1" "Lab 2" "Lab 3" "Lab 4" "Lab 5" "Lab 6" full_build
+      - run: |
+          cd "Lab 7"
+          npm install
+          npm run build
+          mv ./build ../full_build/"Lab 7"
+      - name: Publish build to gh-pages
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./full_build
