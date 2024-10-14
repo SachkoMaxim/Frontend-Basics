@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Frontend-Basics/Lab%207/static/css/main.9122a689.css",
-    "main.js": "/Frontend-Basics/Lab%207/static/js/main.085e9d46.js",
+    "main.js": "/Frontend-Basics/Lab%207/static/js/main.e617dfe0.js",
     "static/media/Uzhgorod.jpg": "/Frontend-Basics/Lab%207/static/media/Uzhgorod.9b20c87d92d59d11c0e8.jpg",
     "index.html": "/Frontend-Basics/Lab%207/index.html",
     "main.9122a689.css.map": "/Frontend-Basics/Lab%207/static/css/main.9122a689.css.map",
-    "main.085e9d46.js.map": "/Frontend-Basics/Lab%207/static/js/main.085e9d46.js.map"
+    "main.e617dfe0.js.map": "/Frontend-Basics/Lab%207/static/js/main.e617dfe0.js.map"
   },
   "entrypoints": [
     "static/css/main.9122a689.css",
-    "static/js/main.085e9d46.js"
+    "static/js/main.e617dfe0.js"
   ]
 }
