@@ -1,0 +1,7 @@
+.image-element {
+    transition: width 0.25s ease;
+}
+
+.button-panel {
+    display: flex;
+}

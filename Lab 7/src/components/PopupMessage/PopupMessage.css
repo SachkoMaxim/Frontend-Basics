@@ -1,0 +1,35 @@
+.popup-message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+    .popup-message {
+        background-color: rgba(23, 149, 181, 0.5);
+        color: rgb(24, 24, 24);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .popup-message {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+}

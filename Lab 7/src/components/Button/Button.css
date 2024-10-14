@@ -1,0 +1,24 @@
+.btn {
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    padding: 1vh 1vw;
+    margin: 1vh 0.5vw;
+    color: white;
+    background-color: #3569c2;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2d5aa6;
+    box-shadow: 0 3px 3px lightskyblue;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    box-shadow: inset 0px 7px 11px #01163b;
+    z-index: 1;
+    transform: translateY(1px);
+}
