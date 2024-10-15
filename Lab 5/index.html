@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, front, front-end, programming, css, javascript, form, color, click">
+        <meta name="description" content="Це веб-сторінка, де ти можеш ввести дані і потім переглянути їх у іншому вікні. Також можна погратися з числовою таблицею">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Лабораторна 5. Сачко М. Є. - Група ІМ-22</title>
+    </head>
+    <body>
+        <div class="container table-cont">
+            <h1>Заповніть форму</h1>
+
+            <form id="infoForm">
+                <input type="text" id="name" class="inputt" placeholder="ПІБ (Прізвище І. П.)" required>
+
+                <input type="number" id="variant" class="inputt" placeholder="Варіант (1-999)" required>
+
+                <input type="text" id="group" class="inputt" placeholder="Група (АА-11)" required>
+
+                <div class="phone-input">
+                    <select id="countryCode" class="inputt selectt" required>
+                        <option value=""></option>
+                        <option value="+380">+380</option>
+                        <option value="+001">+001</option>
+                        <option value="+44">+44</option>
+                        <option value="+49">+49</option>
+                    </select>
+                    <input type="tel" id="phone" class="inputt input-in-selectt" placeholder="Телефон ((111)-111-11-11)" required>
+                </div>                
+
+                <input type="text" id="idCard" class="inputt" placeholder="ID-карта (АА №111111)" required>
+
+                <button type="submit">Надіслати</button>
+
+            </form>
+
+            <div id="bottomErrorMessages" class="error-message"></div>
+
+        </div>
+
+        <div class="blank-spot"></div>
+
+        <div class="container color-cont">
+            <h1>Погратися з таблицею</h1>
+
+            <table id="colorTable">
+                <tbody>
+                </tbody>
+            </table>
+
+            <div class="color-palette" id="colorPalette">
+                <input type="color" id="pickerColor" value="#ff0000">
+            </div>
+
+        </div>
+
+        <div id="draggableModal" class="modal">
+            <div id="modalHeader" class="modal-header">
+                <span class="close-btn">&times;</span>
+                <h2>Уведена інформація</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalContent"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
