@@ -1,14 +1,34 @@
 {
   "files": {
-    "main.css": "/Frontend-Basics/Lab%207/static/css/main.320471c7.css",
-    "main.js": "/Frontend-Basics/Lab%207/static/js/main.820080fd.js",
+    "main.css": "/Frontend-Basics/Lab%207/static/css/main.7d9f10f2.css",
+    "main.js": "/Frontend-Basics/Lab%207/static/js/main.b460f7e8.js",
+    "static/media/Iliad.jpg": "/Frontend-Basics/Lab%207/static/media/Iliad.81aa1484826dbd90cb01.jpg",
     "static/media/Uzhgorod.jpg": "/Frontend-Basics/Lab%207/static/media/Uzhgorod.9b20c87d92d59d11c0e8.jpg",
+    "static/media/GreekMythUA.jpg": "/Frontend-Basics/Lab%207/static/media/GreekMythUA.e95700f526de31b6daea.jpg",
+    "static/media/Odyssey.jpg": "/Frontend-Basics/Lab%207/static/media/Odyssey.305e07db860291b692fc.jpg",
+    "static/media/ChineseMythology.jpg": "/Frontend-Basics/Lab%207/static/media/ChineseMythology.3eab4e94b0b214ab4f7c.jpg",
+    "static/media/HinduMythology.jpg": "/Frontend-Basics/Lab%207/static/media/HinduMythology.4b456a5b703a6916f919.jpg",
+    "static/media/SlavicMythology.jpg": "/Frontend-Basics/Lab%207/static/media/SlavicMythology.1e25a9e4cb2f60723b5a.jpg",
+    "static/media/ArthurianMythology.jpg": "/Frontend-Basics/Lab%207/static/media/ArthurianMythology.1cea04a7e47b199454da.jpg",
+    "static/media/Eneida.jpg": "/Frontend-Basics/Lab%207/static/media/Eneida.beaa59b96911ff05038d.jpg",
+    "static/media/GreekMythology.jpg": "/Frontend-Basics/Lab%207/static/media/GreekMythology.81e1d5d9489249ac68d9.jpg",
+    "static/media/EgyptianMythology.jpg": "/Frontend-Basics/Lab%207/static/media/EgyptianMythology.806573f162e98df91028.jpg",
+    "static/media/JapaneseMythology.jpg": "/Frontend-Basics/Lab%207/static/media/JapaneseMythology.d5738b71368d5072b8bb.jpg",
+    "static/media/CelticMythology.jpg": "/Frontend-Basics/Lab%207/static/media/CelticMythology.1bb014db344f1b92412c.jpg",
+    "static/media/Yokai.jpg": "/Frontend-Basics/Lab%207/static/media/Yokai.af5aef4a876bb9585595.jpg",
+    "static/media/AztecMythology.jpg": "/Frontend-Basics/Lab%207/static/media/AztecMythology.2e3e5151dd911ee036a7.jpg",
+    "static/media/MesopotamianMythology.jpg": "/Frontend-Basics/Lab%207/static/media/MesopotamianMythology.569a40e6fc60f32e1e77.jpg",
+    "static/media/NorseMythology.jpg": "/Frontend-Basics/Lab%207/static/media/NorseMythology.c618ad78ee5290029778.jpg",
+    "static/media/JourneyToTheWestVol4.jpg": "/Frontend-Basics/Lab%207/static/media/JourneyToTheWestVol4.412123bcf23c5ce1c06e.jpg",
+    "static/media/JourneyToTheWestVol1.jpg": "/Frontend-Basics/Lab%207/static/media/JourneyToTheWestVol1.9c83e86aa6899beee337.jpg",
+    "static/media/JourneyToTheWestVol3.jpg": "/Frontend-Basics/Lab%207/static/media/JourneyToTheWestVol3.c89b7e7d97ef62cec6b5.jpg",
+    "static/media/JourneyToTheWestVol2.jpg": "/Frontend-Basics/Lab%207/static/media/JourneyToTheWestVol2.4a909eb0193c25210d03.jpg",
     "index.html": "/Frontend-Basics/Lab%207/index.html",
-    "main.320471c7.css.map": "/Frontend-Basics/Lab%207/static/css/main.320471c7.css.map",
-    "main.820080fd.js.map": "/Frontend-Basics/Lab%207/static/js/main.820080fd.js.map"
+    "main.7d9f10f2.css.map": "/Frontend-Basics/Lab%207/static/css/main.7d9f10f2.css.map",
+    "main.b460f7e8.js.map": "/Frontend-Basics/Lab%207/static/js/main.b460f7e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.320471c7.css",
-    "static/js/main.820080fd.js"
+    "static/css/main.7d9f10f2.css",
+    "static/js/main.b460f7e8.js"
   ]
 }
