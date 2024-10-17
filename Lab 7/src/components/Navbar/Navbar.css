@@ -1,0 +1,107 @@
+.navbar {
+    overflow: hidden;
+    background-color: #3edc66;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-left: -9px;
+}
+
+.navbar-toggle {
+    background-color: #3edc66;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-list.open {
+    display: flex;
+}
+
+.navbar-item {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    background: #a6dfd6;
+    color: black;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+@media (min-width: 768px) {
+    .navbar-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: #2fad4f;
+    }
+
+    .navbar-toggle {
+        background-color: #2fad4f;
+        color: white;
+    }
+
+    .navbar-item:hover {
+        background: #80aca6;
+        color: black;
+    }
+
+    .navbar-item.active {
+        background-color: darkmagenta;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .navbar {
+        background-color: #3edc66;
+    }
+
+    .navbar-toggle {
+        background-color: #3edc66;
+        color: white;
+    }
+
+    .navbar-item:hover {
+        background: #a6dfd6;
+        color: black;
+    }
+
+    .navbar-item.active {
+        background-color: violet;
+    }
+}
