@@ -1,0 +1,50 @@
+.goods-card {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    width: 120px;
+    overflow: hidden;
+}
+
+.goods-card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.goods-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.goods-title {
+    margin: 8px 0;
+    font-size: 18px;
+    word-wrap: break-word;
+    hyphens: auto;
+    lang: uk;
+}
+
+.goods-price {
+    color: blue;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .gallery {
+        flex-direction: row;
+    }
+
+    .goods-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 900px) {
+    .goods-card {
+        width: calc(25% - 20px);
+    }
+}

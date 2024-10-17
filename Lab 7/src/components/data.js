@@ -1,3 +1,24 @@
+import Iliad from "../assets/images/Iliad.jpg";
+import Odyssey from "../assets/images/Odyssey.jpg";
+import GreekMyth from "../assets/images/GreekMythology.jpg";
+import NorseMyth from "../assets/images/NorseMythology.jpg";
+import EgyptianMyth from "../assets/images/EgyptianMythology.jpg";
+import ChineseMyth from "../assets/images/ChineseMythology.jpg";
+import JapaneseMyth from "../assets/images/JapaneseMythology.jpg";
+import Yokai from "../assets/images/Yokai.jpg";
+import HinduMyth from "../assets/images/HinduMythology.jpg";
+import AztecMyth from "../assets/images/AztecMythology.jpg";
+import ArthurianMyth from "../assets/images/ArthurianMythology.jpg";
+import MesopotamianMyth from "../assets/images/MesopotamianMythology.jpg";
+import CelticMyth from "../assets/images/CelticMythology.jpg";
+import SlavicMyth from "../assets/images/SlavicMythology.jpg";
+import JournToWest1 from "../assets/images/JourneyToTheWestVol1.jpg";
+import JournToWest2 from "../assets/images/JourneyToTheWestVol2.jpg";
+import JournToWest3 from "../assets/images/JourneyToTheWestVol3.jpg";
+import JournToWest4 from "../assets/images/JourneyToTheWestVol4.jpg";
+import GreekMythUA from "../assets/images/GreekMythUA.jpg";
+import Eneida from "../assets/images/Eneida.jpg";
+
 export const paragraphs = [
     {
         className: "",
@@ -80,5 +101,108 @@ export const cities = [
         text: "Серед найвідоміших місць Ужгорода є його замок, туристів також приваблюють костел, синагога та резиденція " +
         "єпископа. У 1646 році під егідою Ватикану проголошено Ужгородську унію та утворено греко-католицьку церкву " +
         "на Закарпатті.",
+    },
+];
+
+export const products = [
+    {
+        image: Iliad,
+        title: 'Іліада Гомера',
+        price: 4.99,
+    },
+    {
+        image: Odyssey,
+        title: 'Одіссея Гомера',
+        price: 10.00,
+    },
+    {
+        image: GreekMyth,
+        title: 'Грецька Міфологія',
+        price: 28.00,
+    },
+    {
+        image: NorseMyth,
+        title: 'Скандинавська Міфологія',
+        price: 11.00,
+    },
+    {
+        image: EgyptianMyth,
+        title: 'Єгипетська Міфологія',
+        price: 14.99,
+    },
+    {
+        image: ChineseMyth,
+        title: 'Китайська Міфологія',
+        price: 29.66,
+    },
+    {
+        image: JapaneseMyth,
+        title: 'Японська Міфологія',
+        price: 16.99,
+    },
+    {
+        image: Yokai,
+        title: 'Книга Йокаїв: Містичних створінь Японського Фольклору',
+        price: 24.99,
+    },
+    {
+        image: HinduMyth,
+        title: 'Індуїстська Міфологія',
+        price: 10.75,
+    },
+    {
+        image: AztecMyth,
+        title: 'Ацтекська Міфологія',
+        price: 5.00,
+    },
+    {
+        image: ArthurianMyth,
+        title: 'Артуріанські Міфи',
+        price: 9.96,
+    },
+    {
+        image: MesopotamianMyth,
+        title: 'Месопотамська Міфологія',
+        price: 19.99,
+    },
+    {
+        image: CelticMyth,
+        title: 'Кельтська Міфологія',
+        price: 19.99,
+    },
+    {
+        image: SlavicMyth,
+        title: 'Слов\'янська Міфологія',
+        price: 19.09,
+    },
+    {
+        image: JournToWest1,
+        title: 'Подорож на Захід. Том 1',
+        price: 39.19,
+    },
+    {
+        image: JournToWest2,
+        title: 'Подорож на Захід. Том 2',
+        price: 39.01,
+    },
+    {
+        image: JournToWest3,
+        title: 'Подорож на Захід. Том 3',
+        price: 36.68,
+    },
+    {
+        image: JournToWest4,
+        title: 'Подорож на Захід. Том 4',
+        price: 39.50,
+    },
+    {
+        image: GreekMythUA,
+        title: 'Міфи Давньої Греції',
+        price: 2.99,
+    },
+    {
+        image: Eneida,
+        title: 'Енеїда Котляревського',
+        price: 5.99,
     },
 ];

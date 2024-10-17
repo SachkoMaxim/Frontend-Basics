@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Content from './components/Content/Content';
 import PopupMessage from './components/PopupMessage/PopupMessage';
 import Navbar from "./components/Navbar/Navbar";
-import GoodsGallery from "./components/GoodsGallery";
+import GoodsGallery from "./components/GoodsGallery/GoodsGallery";
 import './App.css';
 
 function App() {

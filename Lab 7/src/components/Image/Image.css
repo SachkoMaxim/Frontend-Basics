@@ -1,4 +1,6 @@
 .image-element {
+    border-radius: 8px;
+    object-fit: cover;
     transition: width 0.25s ease;
 }
 

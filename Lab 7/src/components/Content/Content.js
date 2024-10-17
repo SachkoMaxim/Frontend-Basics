@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ListElements from "../ListElement";
 import Paragraph from '../Paragraph';
 import Image from '../Image/Image';
+import Button from '../Button/Button';
 import './Content.css';
 import { paragraphs, hobbies, books, cities } from "../data";
-import Button from '../Button/Button';
 
 class Content extends Component {
     constructor(props) {
