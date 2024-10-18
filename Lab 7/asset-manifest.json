@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Frontend-Basics/Lab%207/static/css/main.7d9f10f2.css",
+    "main.css": "/Frontend-Basics/Lab%207/static/css/main.c96f985c.css",
     "main.js": "/Frontend-Basics/Lab%207/static/js/main.b460f7e8.js",
     "static/media/Iliad.jpg": "/Frontend-Basics/Lab%207/static/media/Iliad.81aa1484826dbd90cb01.jpg",
     "static/media/Uzhgorod.jpg": "/Frontend-Basics/Lab%207/static/media/Uzhgorod.9b20c87d92d59d11c0e8.jpg",
@@ -24,11 +24,11 @@
     "static/media/JourneyToTheWestVol3.jpg": "/Frontend-Basics/Lab%207/static/media/JourneyToTheWestVol3.c89b7e7d97ef62cec6b5.jpg",
     "static/media/JourneyToTheWestVol2.jpg": "/Frontend-Basics/Lab%207/static/media/JourneyToTheWestVol2.4a909eb0193c25210d03.jpg",
     "index.html": "/Frontend-Basics/Lab%207/index.html",
-    "main.7d9f10f2.css.map": "/Frontend-Basics/Lab%207/static/css/main.7d9f10f2.css.map",
+    "main.c96f985c.css.map": "/Frontend-Basics/Lab%207/static/css/main.c96f985c.css.map",
     "main.b460f7e8.js.map": "/Frontend-Basics/Lab%207/static/js/main.b460f7e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d9f10f2.css",
+    "static/css/main.c96f985c.css",
     "static/js/main.b460f7e8.js"
   ]
 }
