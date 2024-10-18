@@ -15,12 +15,16 @@ class Content extends Component {
             images: [
                 { 
                     id: Date.now(), 
-                    size: 500,
-                    initialSize: 500,
+                    size: this.calculateSize(),
+                    initialSize: this.calculateSize(),
                 }
             ],
         };
     }
+
+    calculateSize = () => {
+        return window.innerWidth * 0.55;
+    };
 
     toggleFirstElementStyle = () => {
         this.setState((prevState) => ({
@@ -41,7 +45,7 @@ class Content extends Component {
     };
 
     addImage = () => {
-        const newImage = { id: Date.now(), size: 500, initialSize: 500 };
+        const newImage = { id: Date.now(), size: this.calculateSize(), initialSize: this.calculateSize() };
         this.setState((prevState) => ({
             images: [...prevState.images, newImage],
         }));
