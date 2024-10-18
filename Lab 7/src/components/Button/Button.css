@@ -11,14 +11,22 @@
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #2d5aa6;
-    box-shadow: 0 3px 3px lightskyblue;
-    transform: translateY(-1px);
-}
-
 .btn:active {
     box-shadow: inset 0px 7px 11px #01163b;
     z-index: 1;
     transform: translateY(1px);
+}
+
+@media (min-width: 600px) {
+    .btn:hover {
+        background-color: #2d5aa6;
+        box-shadow: 0 3px 3px lightskyblue;
+        transform: translateY(-1px);
+    }
+
+    .btn:active {
+        box-shadow: inset 0px 7px 11px #01163b;
+        z-index: 1;
+        transform: translateY(1px);
+    }
 }
