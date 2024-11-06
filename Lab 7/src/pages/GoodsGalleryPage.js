@@ -1,6 +1,5 @@
-import GoodsCard from "../GoodsCard/GoodsCard";
-import './GoodsGallery.css';
-import { products } from "../data";
+import GoodsCard from "../components/GoodsCard/GoodsCard";
+import { products } from "../data/data";
 
 function GoodsGallery() {
     return (

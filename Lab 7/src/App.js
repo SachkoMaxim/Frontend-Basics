@@ -1,9 +1,7 @@
 import { Routes, Route, HashRouter } from "react-router-dom";
-import Header from './components/Header';
-import Content from './components/Content/Content';
-import PopupMessage from './components/PopupMessage/PopupMessage';
 import Navbar from "./components/Navbar/Navbar";
-import GoodsGallery from "./components/GoodsGallery/GoodsGallery";
+import MainPage from "./pages/HomePage";
+import GoodsGalleryPage from "./pages/GoodsGalleryPage";
 import './App.css';
 
 function App() {
@@ -11,8 +9,8 @@ function App() {
     <HashRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<> <Header /> <Content /> <PopupMessage /> </>} />
-          <Route path="/gallery" element={<> <GoodsGallery /> </>} />
+          <Route path="/" element={<MainPage />} />
+          <Route path="/gallery" element={<GoodsGalleryPage />} />
         </Routes>
     </HashRouter>
   );
