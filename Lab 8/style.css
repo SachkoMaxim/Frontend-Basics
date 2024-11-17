@@ -24,8 +24,40 @@ html {
   max-width: 100%;
 }
 
+.bg-lightblue-1 {
+  background-color: #bbdefe !important;
+}
+
 .text-black {
   color: #000 !important;
+}
+
+.text-blue-1 {
+  color: #2d2f93 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-lightblue-1 {
+    background-color: #abd6ff !important;
+  }
+
+  .text-blue-1 {
+    color: #8183ff !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-lightblue-1 {
+    background-color: #bbdefe !important;
+  }
+
+  .text-blue-1 {
+    color: #2d2f93 !important;
+  }
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .item-canter {
@@ -60,8 +92,16 @@ html {
   font-size: 17px;
 }
 
+.p-0 {
+  padding: 0 !important;
+}
+
 .p-1 {
   padding: 15px;
+}
+
+.p-2 {
+  padding: 30px;
 }
 
 .ptb-1 {
@@ -74,6 +114,12 @@ html {
 
 .pr-2 {
   padding-right: 70px;
+}
+
+.center-all {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .blue-hover {
@@ -209,11 +255,14 @@ html {
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-color: #eeeeee;
   justify-content: center;
   text-align: center;
   align-items: center;
   padding: 10px;
+}
+
+.logo-bg {
+  background-color: #eeeeee;
 }
 
 .main-menu {
@@ -354,7 +403,7 @@ html {
     box-sizing: border-box;
   }
 
-  .logo-place {
+  .logo-bg {
     background-color: #fff;
   }
 
@@ -382,5 +431,72 @@ html {
 
   .main-menu nav {
     width: 100%;
+  }
+}
+
+.header-text {
+  z-index: 10;
+  padding-right: 20px;
+}
+
+.center-text {
+  display: block;
+  text-align: center;
+}
+
+.hero-text-start {
+  text-align: start;
+  padding-left: 30px;
+}
+
+.hero-main {
+  color: #030431;
+  margin-top: 0px;
+  text-transform: normal;
+  font-size: 50px;
+  -webkit-mask-image: linear-gradient(90deg, black 70%, rgba(0, 0, 0, 0.5));
+  mask-image: linear-gradient(90deg, black 70%, rgba(0, 0, 0, 0.5));
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.hero__btn {
+  margin-top: 20px;
+  padding: 20px 0px;
+}
+
+.hero-btn {
+  background-color: #2d2f93;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.hero-man {
+  flex: 1;
+  margin-left: -100px;
+  z-index: 5;
+}
+
+.hero-man img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+@media (max-width: 1050px) {
+  .hero-main {
+    font-size: 30px;
+  }
+
+  .hero-cont {
+    display: none;
   }
 }
