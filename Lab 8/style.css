@@ -60,6 +60,10 @@ html {
   color: #f05510 !important;
 }
 
+.text-yellow-1 {
+  color: #fbba42 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   .bg-lightblue-1 {
     background-color: #abd6ff !important;
@@ -108,6 +112,10 @@ html {
   justify-content: flex-end;
 }
 
+.gap-0-05 {
+  gap: 5px !important;
+}
+
 .gap-1 {
   gap: 35px !important;
 }
@@ -122,6 +130,10 @@ html {
 
 .color-lightgray {
   color: #808080;
+}
+
+.text-size-15 {
+  font-size: 15px !important;
 }
 
 .text-size-17 {
@@ -182,6 +194,10 @@ html {
 
 .pr-2 {
   padding-right: 70px;
+}
+
+.m-0 {
+  margin: 0 !important;
 }
 
 .mt-1 {
@@ -624,12 +640,12 @@ html {
 }
 
 .card h3 {
-  color: #4a4a4a;
+  color: #4a4a4a !important;
   margin-bottom: 10px;
 }
 
 .card p {
-  color: #777;
+  color: #777 !important;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -661,4 +677,45 @@ html {
   text-underline-offset: 20px;
   text-decoration-color: currentColor;
   text-decoration-thickness: 3px;
+}
+
+.card.course {
+  width: 365px;
+}
+
+.card.course:hover {
+  background-color: #fff !important;
+}
+
+.card.course:hover h3,
+.card.course:hover i,
+.card.course:hover p,
+.card.course:hover a {
+  color: inherit !important;
+}
+
+.card.course:hover .blue-hover {
+  color: black !important;
+  transition: color 0.5s ease;
+}
+
+.card.course:hover .blue-hover:hover {
+  color: darkblue !important;
+}
+
+.card.course:hover .text-yellow-1 {
+  color: #fbba42 !important;
+}
+
+.card.course:hover p,
+.card.course:hover i {
+  color: #777 !important;
+}
+
+.card.course img {
+  border-radius: 8px;
+}
+
+.card.course i {
+  color: #777;
 }
