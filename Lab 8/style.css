@@ -24,6 +24,10 @@ html {
   max-width: 100%;
 }
 
+.bg-blue-1 {
+  background-color: #2d2f93 !important;
+}
+
 .bg-lightblue-1 {
   background-color: #bbdefe !important;
 }
@@ -34,6 +38,10 @@ html {
 
 .text-black {
   color: #000 !important;
+}
+
+.text-white {
+  color: #fff !important;
 }
 
 .text-blue-1 {
@@ -162,6 +170,10 @@ html {
 
 .p-3 {
   padding: 60px;
+}
+
+.p-4 {
+  padding: 75px;
 }
 
 .ptb-1 {
@@ -367,7 +379,6 @@ html {
   display: none;
   position: absolute;
   background-color: #ffffffc6;
-  margin-top: 15px;
   list-style-type: none;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -718,4 +729,18 @@ html {
 
 .card.course i {
   color: #777;
+}
+
+.card.course.teacher {
+  width: fit-content !important;
+}
+
+.hero-btn.footer-btn {
+  background-color: #fff !important;
+  color: #000 !important;
+  transition: filter 0.15s ease-in-out;
+}
+
+.hero-btn.footer-btn:hover {
+  filter: invert();
 }
