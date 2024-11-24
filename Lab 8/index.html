@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="HTML, front, front-end, programming, web-page, webpage, css, maket, site-maket"
+    />
+    <meta name="description" content="Це макет сайту." />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Лабораторна 8. Сачко М. Є. - Група ІМ-22</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-row header-top">
+        <div class="social-media">
+          <ul class="horizontal-list">
+            <li>
+              <a href="#" class="fa-brands fa-twitter fa-hr-list"></a>
+            </li>
+
+            <li>
+              <a href="#" class="fa-brands fa-facebook-f fa-hr-list"></a>
+            </li>
+
+            <li>
+              <a href="#" class="fa-brands fa-linkedin-in fa-hr-list"></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="fa-brands fa-google-plus-g fa-hr-list pr-1"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-block header-info-block">
+          <div class="flex-row">
+            <div class="header-info flex-start">
+              <ul class="info-list">
+                <li class="info">needhelp@gmail.com</li>
+                <li class="info">666 7475 25252</li>
+              </ul>
+            </div>
+
+            <div class="header-info flex-end pr-2">
+              <ul class="info-list gap-1 h-100">
+                <li>
+                  <a
+                    href="#"
+                    class="no-text-decoration color-lightgray text-size-17 login-btn"
+                    ><i class="fa-regular fa-user fa-hi-list pr-0-7"></i
+                    >Login</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="no-text-decoration color-lightgray text-size-17 login-btn"
+                    ><i class="fa-solid fa-lock fa-hi-list pr-0-7"></i
+                    >Register</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header-row navbar">
+      <div class="logo-place logo-bg">
+        <a href="index.html" class="p-1"
+          ><img src="images/logo.png" alt=""
+        /></a>
+      </div>
+
+      <div class="header-block header-row">
+        <button class="burger-menu" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="main-menu-container">
+          <div class="main-menu header-row ptb-1">
+            <nav class="header-row info-list">
+              <ul class="info-list gap-1">
+                <li>
+                  <a href="#" class="no-text-decoration text-black blue-hover"
+                    >Home</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#" class="no-text-decoration text-black blue-hover"
+                    >About</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#" class="no-text-decoration text-black blue-hover"
+                    >Courses</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#" class="no-text-decoration text-black blue-hover"
+                    >Instructors</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#" class="no-text-decoration text-black blue-hover"
+                    >Blog <i class="submenu-list"></i
+                  ></a>
+
+                  <ul class="submenu">
+                    <li>
+                      <a
+                        href="#"
+                        class="no-text-decoration text-black blue-hover"
+                        >Blog</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="no-text-decoration text-black blue-hover"
+                        >Blog Details</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="no-text-decoration text-black blue-hover"
+                        >Element</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="no-text-decoration text-black blue-hover"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="search-container p-1 pr-2 flex-end">
+            <form action="#" class="search-text">
+              <input type="text" name="Search" placeholder="Search Courses" />
+              <i class="fa-solid fa-magnifying-glass search-button"></i>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="header-row">
+        <div class="logo-place"></div>
+
+        <div class="header-block header-row bg-lightblue-1 center-all">
+          <div class="header-text">
+            <span class="center-text text-blue-1 bold p-2 hero-text-start"
+              >Popular Online Courses</span
+            >
+
+            <h1 class="center-text hero-main mask-image hero-text-start">
+              The New Way To Learn Properly with Us!
+            </h1>
+
+            <div class="hero__btn">
+              <a href="#" class="btn hero-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="logo-place p-0 hero-cont">
+            <img class="hero-man" src="images/heroman.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="courses-pt">
+        <span class="center-text text-lightblue-1 bold"
+          >Popular Online Courses</span
+        >
+
+        <h2 class="center-text hero-main pt-1">Lets Brows All Catagori</h2>
+
+        <div class="card-container pt-3">
+          <div class="card">
+            <i class="fa-solid fa-image text-blue-2"></i>
+
+            <h3>Web Design</h3>
+
+            <p class="text-start wrap-word">
+              Sorem hpsum folor sixdsft amhtget, consectetur adipiscing elit,
+              sed do eiusmod tempor incid.
+            </p>
+
+            <div class="card-footer">
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-book-open-reader text-blue-2"></i>
+
+            <h3>App Development</h3>
+
+            <p class="text-start wrap-word">
+              Sorem hpsum folor sixdsft amhtget, consectetur adipiscing elit,
+              sed do eiusmod tempor incid.
+            </p>
+
+            <div class="card-footer">
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-photo-film text-blue-2"></i>
+
+            <h3>Video Editing</h3>
+
+            <p class="text-start wrap-word">
+              Sorem hpsum folor sixdsft amhtget, consectetur adipiscing elit,
+              sed do eiusmod tempor incid.
+            </p>
+
+            <div class="card-footer">
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-laptop text-blue-2"></i>
+
+            <h3>Digital Marketing</h3>
+
+            <p class="text-start wrap-word">
+              Sorem hpsum folor sixdsft amhtget, consectetur adipiscing elit,
+              sed do eiusmod tempor incid.
+            </p>
+
+            <div class="card-footer">
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-clipboard-list text-blue-2"></i>
+
+            <h3>Seo Marketing</h3>
+            <p class="text-start wrap-word">
+              Sorem hpsum folor sixdsft amhtget, consectetur adipiscing elit,
+              sed do eiusmod tempor incid.
+            </p>
+
+            <div class="card-footer">
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-regular fa-lightbulb text-blue-2"></i>
+
+            <h3>Content Writing</h3>
+
+            <p class="text-start wrap-word">
+              Sorem hpsum folor sixdsft amhtget, consectetur adipiscing elit,
+              sed do eiusmod tempor incid.
+            </p>
+
+            <div class="card-footer">
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__btn text-center-h mt-1">
+          <a href="#" class="btn hero-btn">Find More Courses</a>
+        </div>
+      </div>
+
+      <div class="courses-pt text-size-24">
+        <div class="header-row card-container bg-lightblue-2 p-3 gap-2">
+          <div class="center-text topic text-green-1">
+            <i class="fa-solid fa-laptop text-size-60"></i>
+
+            <div class="header-row bold pt-2">
+              <span>1050</span>
+
+              <p>+ Topics</p>
+            </div>
+          </div>
+
+          <div class="center-text topic text-blue-1">
+            <i class="fa-solid fa-book-open-reader text-size-60"></i>
+
+            <div class="header-row bold pt-2">
+              <span>1050</span>
+
+              <p>+ Topics</p>
+            </div>
+          </div>
+
+          <div class="center-text topic text-green-2">
+            <i class="fa-solid fa-file-pen text-size-60"></i>
+
+            <div class="header-row bold pt-2">
+              <span>1050</span>
+
+              <p>+ Topics</p>
+            </div>
+          </div>
+
+          <div class="center-text topic text-orange-1">
+            <i class="fa-solid fa-user-tie text-size-60"></i>
+
+            <div class="header-row bold pt-2">
+              <span>1050</span>
+
+              <p>+ Topics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses-pt">
+        <span class="center-text text-lightblue-1 bold"
+          >Most Popular Course Of This Week</span
+        >
+
+        <h2 class="center-text hero-main pt-1">Our Popular Course</h2>
+
+        <div class="card-container pt-3">
+          <div class="card course p-0">
+            <img src="images/popular_course_1.png" alt="" />
+
+            <div class="p-2">
+              <h3 class="blue-hover">
+                <a href="#" class="blue-hover no-text-decoration"
+                  >Graphic Design</a
+                >
+              </h3>
+
+              <div class="header-row text-size-15 pt-2">
+                <div>
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+                </div>
+
+                <p class="m-0">52 Review</p>
+              </div>
+
+              <div class="header-row text-size-15 pt-2">
+                <div class="header-row gap-1">
+                  <div class="header-row text-size-15 item-canter gap-0-05">
+                    <i class="fa-regular fa-user m-0 text-size-15"></i>
+
+                    <p class="m-0 text-size-15">562</p>
+                  </div>
+
+                  <div class="header-row text-size-15 item-canter gap-0-05">
+                    <i class="fa-regular fa-heart m-0 text-size-15"></i>
+
+                    <p class="m-0 text-size-15">562</p>
+                  </div>
+                </div>
+
+                <p class="m-0">Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card course p-0">
+            <img src="images/popular_course_2.png" alt="" />
+
+            <div class="p-2">
+              <h3 class="blue-hover">
+                <a href="#" class="blue-hover no-text-decoration"
+                  >Web Development</a
+                >
+              </h3>
+
+              <div class="header-row text-size-15 pt-2">
+                <div>
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+                </div>
+
+                <p class="m-0">52 Review</p>
+              </div>
+
+              <div class="header-row text-size-15 pt-2">
+                <div class="header-row gap-1">
+                  <div class="header-row text-size-15 item-canter gap-0-05">
+                    <i class="fa-regular fa-user m-0 text-size-15"></i>
+
+                    <p class="m-0 text-size-15">562</p>
+                  </div>
+
+                  <div class="header-row text-size-15 item-canter gap-0-05">
+                    <i class="fa-regular fa-heart m-0 text-size-15"></i>
+
+                    <p class="m-0 text-size-15">562</p>
+                  </div>
+                </div>
+
+                <p class="m-0">Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card course p-0">
+            <img src="images/popular_course_3.png" alt="" />
+
+            <div class="p-2">
+              <h3 class="blue-hover">
+                <a href="#" class="blue-hover no-text-decoration"
+                  >Digital Marketing</a
+                >
+              </h3>
+
+              <div class="header-row text-size-15 pt-2">
+                <div>
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+
+                  <i
+                    class="fa-solid fa-star text-yellow-1 m-0 text-size-15"
+                  ></i>
+                </div>
+
+                <p class="m-0">52 Review</p>
+              </div>
+
+              <div class="header-row text-size-15 pt-2">
+                <div class="header-row gap-1">
+                  <div class="header-row text-size-15 item-canter gap-0-05">
+                    <i class="fa-regular fa-user m-0 text-size-15"></i>
+
+                    <p class="m-0 text-size-15">562</p>
+                  </div>
+
+                  <div class="header-row text-size-15 item-canter gap-0-05">
+                    <i class="fa-regular fa-heart m-0 text-size-15"></i>
+
+                    <p class="m-0 text-size-15">562</p>
+                  </div>
+                </div>
+
+                <p class="m-0">Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__btn text-center-h mt-1">
+          <a href="#" class="btn hero-btn">Find More Courses</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="courses-pt">
+        <div class="bg-blue-1 p-4">
+          <span class="center-text text-lightblue-1 bold"
+            >More About Our Faculty</span
+          >
+
+          <h2 class="center-text text-white hero-main pt-1">
+            Our Best Teachers
+          </h2>
+
+          <div class="card-container pt-3">
+            <div class="card course teacher p-0">
+              <img src="images/teacher_1.png" alt="" />
+
+              <div class="p-2">
+                <h3 class="blue-hover">
+                  <a href="#" class="blue-hover no-text-decoration"
+                    >Alexa Janathon</a
+                  >
+                </h3>
+
+                <p>Faculty</p>
+              </div>
+            </div>
+
+            <div class="card course teacher p-0">
+              <img src="images/teacher_2.png" alt="" />
+
+              <div class="p-2">
+                <h3 class="blue-hover">
+                  <a href="#" class="blue-hover no-text-decoration"
+                    >Janathon Smith</a
+                  >
+                </h3>
+
+                <p>Faculty</p>
+              </div>
+            </div>
+
+            <div class="card course teacher p-0">
+              <img src="images/teacher_3.png" alt="" />
+
+              <div class="p-2">
+                <h3 class="blue-hover">
+                  <a href="#" class="blue-hover no-text-decoration"
+                    >Alexa MacCalum</a
+                  >
+                </h3>
+
+                <p>Faculty</p>
+              </div>
+            </div>
+
+            <div class="card course teacher p-0">
+              <img src="images/teacher_4.png" alt="" />
+
+              <div class="p-2">
+                <h3 class="blue-hover">
+                  <a href="#" class="blue-hover no-text-decoration"
+                    >Alexa j Watson</a
+                  >
+                </h3>
+
+                <p>Faculty</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__btn text-center-h mt-1">
+            <a href="#" class="btn hero-btn footer-btn">View All Faculty</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
