@@ -84,11 +84,11 @@ html {
 
 @media (prefers-color-scheme: light) {
   .bg-lightblue-1 {
-    background-color: #bbdefe !important;
+    background-color: #95ccff !important;
   }
 
   .text-blue-1 {
-    color: #2d2f93 !important;
+    color: #8082ff !important;
   }
 }
 
